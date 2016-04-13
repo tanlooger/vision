@@ -6,3 +6,7 @@ how to make multiple architecture library
 >>> lipo -create *.a -output multi.a
 
 
+dyld: Library not loaded: something.dylib
+  Referenced from: /var/mobile/Applications/D7FAAE31-8B1C-405B-AE51-5C2720468E18/transport-demo.app/transport-demo
+  Reason: image not found
+>>> general > embedded binaries > add the dynamic library
