@@ -1,0 +1,3 @@
+webrtc/base/event.h:19:2: "Must define either WEBRTC_WIN or WEBRTC_POSIX."
+>>> Project > Build Settings > search for "Preprocessor Macros" > double click this line > click "+" sign > add "WEBRTC_POSIX"
+
