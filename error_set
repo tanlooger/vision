@@ -35,7 +35,21 @@ basicClientUserAgent.cxx:1154:18: Use of undeclared identifier 'CLOCK_MONOTONIC'
 #endif
 
 
-
+Undefined symbols for architecture armv7:
+  "VTT for std::basic_istringstream<char, std::char_traits<char>, std::allocator<char> >", referenced from:
+      resip::SHA1::update(std::string const&) in librutil.a(Sha1.o)
+  "std::string::reserve(unsigned long)", referenced from:
+      resip::SHA1::createDigest() in librutil.a(Sha1.o)
+  "std::clog", referenced from:
+      stunParseMessage(char*, unsigned int, StunMessage&, bool) in librutil.a(Stun.o)
+      stunEncodeMessage(StunMessage const&, char*, unsigned int, StunAtrString const&, bool) in librutil.a(Stun.o)
+      stunServerProcessMsg(char*, unsigned int, StunAddress4&, StunAddress4&, StunAddress4&, StunAddress4&, StunMessage*, StunAddress4*, StunAtrString*, bool*, bool*, bool) in librutil.a(Stun.o)
+  "std::string::append(std::string const&)", referenced from:
+      resip::SHA1::update(std::istream&) in librutil.a(Sha1.o)
+  "std::__throw_out_of_range(char const*)", referenced from:
+      resip::CallID::parse(resip::ParseBuffer&) in libresip.a(CallId.o)
+  "std::string::_Rep::_S_empty_rep_storage", referenced from:
+  >>> 
 
 
 
