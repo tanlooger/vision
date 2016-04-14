@@ -49,7 +49,11 @@ Undefined symbols for architecture armv7:
   "std::__throw_out_of_range(char const*)", referenced from:
       resip::CallID::parse(resip::ParseBuffer&) in libresip.a(CallId.o)
   "std::string::_Rep::_S_empty_rep_storage", referenced from:
-  >>> 
+  >>>  adding "-Xlinker -lstdc++" to "Other Linker Flags" appears to resolve the issue
+  
+  
+  
+  
 
 
 
