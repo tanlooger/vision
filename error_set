@@ -56,7 +56,8 @@ Undefined symbols for architecture armv7:
   "resip::operator<<(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, resip::Message const&)", referenced from:
       resip::BasicClientCall::onRemoteSdpChanged(resip::Handle<resip::InviteSession>, resip::SipMessage const&, resip::SdpContents const&) in basicClientCall.o
   "resip::operator<<(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, resip::LazyParser const&)", referenced from:
->>> 
+>>> C++ Language Dialect     change to C++11[-std=c++11]
+>>> c++ Standard Library     change to libstdc++(GNU C++ standard library)
   
 
 
