@@ -62,10 +62,22 @@ Undefined symbols for architecture armv7:
 
 
 
-
+dyld`dyld_fatal_error:
 dyld: Library not loaded: transport-arm64.dylib
   Referenced from: /var/containers/Bundle/Application/21FD6865-FF88-4AF5-A21D-BD682773F4D8/aaaaaa.app/aaaaaa
   Reason: image not found
 >>> 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
