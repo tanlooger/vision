@@ -92,4 +92,3 @@ ninja: build stopped: subcommand failed.
 >>> Once the project content is available, then you can edit the trunk/talk/examples/ios/AppRTCDemo/Info.plist file with the correct app ID you created in step 1. Just search for com.google.AppRTCDemo for what to replace.
 
 
-
