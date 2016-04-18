@@ -88,7 +88,8 @@ ninja: build stopped: subcommand failed.
 
 cannot find mobile provisioning for com.google.AppRTCDemo
 ninja: build stopped: subcommand failed.
->>>
+>>> Before starting the iOS project, create a new iOS App ID in the Apple Development portal with your own account and name for the ID. You will not be able to use com.google..AppRTCDemo for the id, so suggest changing com.google to your own company. 
+>>> Once the project content is available, then you can edit the trunk/talk/examples/ios/AppRTCDemo/Info.plist file with the correct app ID you created in step 1. Just search for com.google.AppRTCDemo for what to replace.
 
 
 
