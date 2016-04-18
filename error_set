@@ -73,8 +73,10 @@ dyld: Library not loaded: transport-arm64.dylib
 FAILED: ../../third_party/llvm-build/Release+Asserts/bin/clang -MMD -MF obj/webrtc/modules/audio_coding/codecs/g722/g722.g722_decode.o.d -DV8_DEPRECATION_WARNINGS -DCLD_VERSION=2 -DEXPAT_RELATIVE_PATH -DWEBRTC_POSIX -DWEBRTC_MAC -DWEBRTC_IOS -DWEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE -DDISABLE_NACL -DCHROMIUM_BUILD -DCR_CLANG_REVISION=264915-1 -DUSE_LIBJPEG_TURBO=1 -DFIELDTRIAL_TESTING_ENABLED -DDISABLE_FTP_SUPPORT=1 -DV8_USE_EXTERNAL_STARTUP_DATA -DUSE_LIBPCI=1 -DUSE_OPENSSL=1 -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -DDYNAMIC_ANNOTATIONS_ENABLED=1 -DWTF_USE_DYNAMIC_ANNOTATIONS=1 -D_DEBUG -Igen -I../.. -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk -O0 -gdwarf-2 -fvisibility=hidden -Werror -miphoneos-version-min=9.0 -arch armv7 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-selector-type-mismatch -Wheader-hygiene -Wno-char-subscripts -Wno-unneeded-internal-declaration -Wno-covered-switch-default -Wstring-conversion -Wno-c++11-narrowing -Wno-deprecated-register -Wno-inconsistent-missing-override -Wno-shift-negative-value -std=c99 -fcolor-diagnostics -fstack-protector-all  -c ../../webrtc/modules/audio_coding/codecs/g722/g722_decode.c -o obj/webrtc/modules/audio_coding/codecs/g722/g722.g722_decode.o
 /bin/sh: ../../third_party/llvm-build/Release+Asserts/bin/clang: cannot execute binary file
 ninja: build stopped: subcommand failed.
->>> 
-
+>>>file /usr/bin/clang
+>>>file ./src/third_party/llvm-build/Release+Asserts/bin/clang
+>>>rm -rf src/chromium/src/third_party
+>>>./src/tools/clang/scripts/update.py
 
 
 
