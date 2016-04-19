@@ -93,4 +93,4 @@ ninja: build stopped: subcommand failed.
 
 
 webrtc/check-ios/src/chromium/src/third_party/llvm-build/Release+Asserts/bin/../lib/clang/3.9.0/include/mmintrin.h:39:5: error: use of undeclared identifier '__builtin_ia32_emms'; did you mean '__builtin_isless'?
->>>
+>>> add "-stdlib=libc++" to <Other C++ Flags> and <Other Linker Flags>
