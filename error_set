@@ -92,3 +92,5 @@ ninja: build stopped: subcommand failed.
 >>> Once the project content is available, then you can edit the trunk/talk/examples/ios/AppRTCDemo/Info.plist file with the correct app ID you created in step 1. Just search for com.google.AppRTCDemo for what to replace.
 
 
+webrtc/check-ios/src/chromium/src/third_party/llvm-build/Release+Asserts/bin/../lib/clang/3.9.0/include/mmintrin.h:39:5: error: use of undeclared identifier '__builtin_ia32_emms'; did you mean '__builtin_isless'?
+>>>
