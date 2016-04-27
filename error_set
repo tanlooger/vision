@@ -155,3 +155,5 @@ Strmiids.lib
 winmm.lib
 
 
+无法解析的外部符号 _AcquireCredentialsHandleA@36，该符号在函数 "enum rtc::HttpAuthResult __cdecl rtc::HttpAuthenticate(char const *,unsigned int,class rtc::SocketAddress const &,class std::basic_string<char,struct std::char_traits<char>
+Secur32.Lib
