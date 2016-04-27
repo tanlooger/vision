@@ -95,3 +95,37 @@ ninja: build stopped: subcommand failed.
 webrtc/check-ios/src/chromium/src/third_party/llvm-build/Release+Asserts/bin/../lib/clang/3.9.0/include/mmintrin.h:39:5: error: use of undeclared identifier '__builtin_ia32_emms'; did you mean '__builtin_isless'?
 >>> add "-stdlib=libc++" to <Other C++ Flags> and <Other Linker Flags>
 >>> https://github.com/Andersbakken/rtags/issues/335
+
+
+
+
+
+ws2_32.lib
+如果没有链接，会报如下错：
+
+error LNK2019: 无法解析的外部符号 __imp__closesocket@4，该符号在函数 _wmain 中被引用
+error LNK2019: 无法解析的外部符号 __imp__recv@16，该符号在函数 _wmain 中被引用
+error LNK2019: 无法解析的外部符号 __imp__accept@12，该符号在函数 _wmain 中被引用
+error LNK2019: 无法解析的外部符号 __imp__listen@8，该符号在函数 _wmain 中被引用
+error LNK2019: 无法解析的外部符号 __imp__ntohs@4，该符号在函数 _wmain 中被引用
+error LNK2019: 无法解析的外部符号 __imp__getsockname@12，该符号在函数 _wmain 中被引用
+error LNK2019: 无法解析的外部符号 __imp__bind@12，该符号在函数 _wmain 中被引用
+error LNK2019: 无法解析的外部符号 __imp__socket@12，该符号在函数 _wmain 中被引用
+
+
+error LNK2019: 无法解析的外部符号 _in6addr_any
+winmm.lib
+error LNK2019: 无法解析的外部符号 __imp__timeGetTime@0
+Rpcrt4.lib
+error LNK2019: 无法解析的外部符号 __imp__UuidEqual@12
+Ntdsapi.lib
+error LNK2019: 无法解析的外部符号 __imp__DsMakeSpnA@28
+
+dmoguids.lib
+error LNK2001: 无法解析的外部符号 _IID_IMediaBuffer
+wmcodecdspuuid.lib
+
+error LNK2001: 无法解析的外部符号 _CLSID_CWMAudioAEC
+Strmiids.lib
+
+无法解析的外部符号 _MEDIATYPE_Audio
