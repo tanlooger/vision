@@ -129,3 +129,9 @@ error LNK2001: 无法解析的外部符号 _CLSID_CWMAudioAEC
 Strmiids.lib
 
 无法解析的外部符号 _MEDIATYPE_Audio
+
+
+
+ 应输入标识符std::max
+ (std::max)(timeout, lagtime);
+ Define NOMINMAX before including windows.h
