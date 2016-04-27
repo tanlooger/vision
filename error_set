@@ -135,3 +135,17 @@ Strmiids.lib
  应输入标识符std::max
  (std::max)(timeout, lagtime);
  Define NOMINMAX before including windows.h
+
+无法解析的外部符号 "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >
+
+
+无法在要求对象展开的函数中使用 __try
+使用 /EHsc 时，带有结构化异常处理的函数不能具有要求展开（毁坏）的对象。
+
+可能的解决方案：
+
+将要求 SEH 的代码移动到另一个函数中。
+
+重写使用 SEH 的函数以避免使用具有析构函数的局部变量和参数。在构造函数或析构函数中不要使用 SEH。
+
+不使用 /EHsc 进行编译。
