@@ -174,3 +174,7 @@ LNK2038	检测到“RuntimeLibrary”的不匹配项:  值“MTd_StaticDebug”�
 
 "wchar_t *" 类型的实参与 "LPCSTR" 类型的形参不兼容	repro	e:\workspace\resiprocate\webrtc\base\win32.cc	391	
 项目属性 -> 配置属性 -> 常规 -> 字符集
+
+
+编译器中发生内部错误  编译器文件“msc1.cpp”，第 1325 行
+
