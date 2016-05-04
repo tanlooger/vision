@@ -161,3 +161,7 @@ Secur32.Lib
 
 无法解析的外部符号 _EVP_md5，该符号在函数 "public: static bool __cdecl rtc::OpenSSLDigest::GetDigestEVP(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,struct env_md_st const * *)" (?GetDigestEVP@OpenSSLDigest@rtc@@SA_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PAPBUenv_md_st@@@Z) 中被引用	ConsoleApplication2	E:\workspace\ConsoleApplication2\ConsoleApplication2\rtc_base.lib(openssldigest.obj)	1	
 ssleay32.lib   libeay32.lib
+
+
+检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1900”(BerkeleyDb.obj 中)	repro (repro\repro)	E:\workspace\resiprocate-1.10.1\repro\db_static.lib(cxx_dbc.obj)	1	
+配置属性->常规->平台工具集
