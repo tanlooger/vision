@@ -141,14 +141,10 @@ Strmiids.lib
 
 无法在要求对象展开的函数中使用 __try
 使用 /EHsc 时，带有结构化异常处理的函数不能具有要求展开（毁坏）的对象。
-
 可能的解决方案：
-
 将要求 SEH 的代码移动到另一个函数中。
-
 重写使用 SEH 的函数以避免使用具有析构函数的局部变量和参数。在构造函数或析构函数中不要使用 SEH。
-
-不使用 /EHsc 进行编译。
+配置属性 -> C/C++ -> 代码生成 -> 启用C++异常 -> 不使用 /EHsc 进行编译
 
 
 无法解析的外部符号 __imp__timeGetTime@0，该符号在函数 "unsigned __int64 __cdecl rtc::TimeNanos(void)" (?TimeNanos@rtc@@YA_KXZ) 中被引用	ConsoleApplication2	E:\workspace\ConsoleApplication2\ConsoleApplication2\timeutils.obj	1	
