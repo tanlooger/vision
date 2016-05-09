@@ -180,3 +180,8 @@ LNK2038	检测到“RuntimeLibrary”的不匹配项:  值“MTd_StaticDebug”�
 
 C1010	在查找预编译头时遇到意外的文件结尾。是否忘记了向源中添加“#include "stdafx.h"”?	rtchttpd	e:\workspace\rtchttpd\rtchttpd\webrtc\base\httpserver.cc	289	
 配置属性->C/C++  -> 预编译头 -> 不使用预编译头
+
+
+
+C4996 'std::copy::_Unchecked_iterators::_Deprecate': Call to 'std::copy' with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators' rtchttpd d:\visualstudio\vc\include\xutility 2322
+配置属性 -> 常规 -> 平台工具集 
