@@ -182,3 +182,5 @@ LNK2038	检测到“RuntimeLibrary”的不匹配项:  值“MTd_StaticDebug”�
 
 通过设置vs工程的环境变量，实现对单个工程本地化配置的目标，环境变量可随整个工程迁移，设置方法：vs工程属性-->配置属性-->调试-->环境，例如，我们要引用../../bin/目录里面的dll，那么我们可以设置为：path=%path%;..\..\bin
 
+C1010	在查找预编译头时遇到意外的文件结尾。是否忘记了向源中添加“#include "stdafx.h"”?	rtchttpd	e:\workspace\rtchttpd\rtchttpd\webrtc\base\httpserver.cc	289	
+配置属性->C/C++  -> 预编译头 -> 不使用预编译头
