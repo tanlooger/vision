@@ -13,3 +13,27 @@ sip服务器(resiprocate)：为不同设备建立连接服务，不同的设备�
 
 5、nathserver对A和B建立匹配信息，此后A向nathserver发的信息会转发B，反之亦然
 
+
+
+
+
+
+
+
+string urlDecode(string &SRC) {
+	string ret;
+	char ch;
+	int i, ii;
+	for (i = 0; i<SRC.length(); i++) {
+		if (int(SRC[i]) == 37) {
+			sscanf(SRC.substr(i + 1, 2).c_str(), "%x", &ii);
+			ch = static_cast<char>(ii);
+			ret += ch;
+			i = i + 2;
+		}
+		else {
+			ret += SRC[i];
+		}
+	}
+	return (ret);
+}
