@@ -193,5 +193,8 @@ Project Properties > Configuration Properties > C/C++ > General > SDL checkså…³æ
 
 
 
-
+Macro definition of snprintf conflicts with Standard Library function declaration
+>>> #if _MSC_VER>=1900
+>>>#  define STDC99
+>>>#endif
 
