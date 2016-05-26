@@ -2,8 +2,13 @@ webrtc/base/event.h:19:2: "Must define either WEBRTC_WIN or WEBRTC_POSIX."
 >>> Project > Build Settings > search for "Preprocessor Macros" > double click this line > click "+" sign > add "WEBRTC_POSIX"
 
 
-how to make multiple architecture library
+how to make multiple architecture library(不同平台库合并)
 >>> lipo -create *.a -output multi.a
+相同平台库合并
+>>> ar -x *.a
+>>> ar cru librtc.a *.o
+>>> ranlib librtc.a
+
 
 
 dyld: Library not loaded: something.dylib
