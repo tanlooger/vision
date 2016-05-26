@@ -8,6 +8,8 @@ how to make multiple architecture library(不同平台库合并)
 >>> ar -x *.a
 >>> ar cru librtc.a *.o
 >>> ranlib librtc.a
+查询支持的平台
+>>> lipo -info librtc.a
 
 
 
