@@ -12,6 +12,14 @@ how to make multiple architecture library(不同平台库合并)
 >>> lipo -info librtc.a
 
 
+要将目录logs打包压缩并分割成多个1M的文件，可以用下面的命令：
+ tar cjf - logs/ |split -b 1m - logs.tar.bz2.
+完成后会产生下列文件：
+ logs.tar.bz2.aa, logs.tar.bz2.ab, logs.tar.bz2.ac
+要解压的时候只要执行下面的命令就可以了：
+cat logs.tar.bz2.a* | tar xj
+
+
 
 dyld: Library not loaded: something.dylib
   Referenced from: /var/mobile/Applications/D7FAAE31-8B1C-405B-AE51-5C2720468E18/transport-demo.app/transport-demo
